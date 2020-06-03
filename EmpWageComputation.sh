@@ -1,11 +1,13 @@
 #!/bin/bash -x
-echo "Welcome to Git bash"
-echo "Welcome to employee Wage computation Program"
-isPresent=$(( RANDOM % 2 ))
-if [ $isPresent -eq 1 ]
-then
-        echo "present"
-elif [ $isPresent -eq 0 ]
-then
-        echo "Absent"
-fi
+ispresent=1;
+randomcheck=$(( $RANDOM % 2))
+salary=0;
+if [ $isPresent -eq  $randomcheck ];
+    then
+     perHourseRate=20;
+     NumberofHours=8;
+    salary=$(( $perHourseRate * $NumberofHours ))
+    echo $salary;
+    else
+    echo $salary;
+     fi
