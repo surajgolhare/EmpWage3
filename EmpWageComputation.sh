@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 echo "Welcome to Git bash"
 echo "Welcome to employee Wage computation Program"
 isPresent=$(( RANDOM % 2 ))
